@@ -220,3 +220,12 @@
    `(web-mode-html-attr-value-face ((,class (:foreground ,keyword))))
    `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face))))
    `(web-mode-html-tag-face ((,class (:foreground ,builtin))))
+   `(jde-java-font-lock-package-face ((t (:foreground ,var))))
+   `(jde-java-font-lock-public-face ((t (:foreground ,keyword))))
+   `(jde-java-font-lock-private-face ((t (:foreground ,keyword))))
+   `(jde-java-font-lock-constant-face ((t (:foreground ,const))))
+   `(jde-java-font-lock-modifier-face ((t (:foreground ,fg2))))
+   `(jde-jave-font-lock-protected-face ((t (:foreground ,keyword))))
+   `(jde-java-font-lock-number-face ((t (:foreground ,var))))
+   `(yas-field-highlight-face ((t (:background ,selection)))))
+   ;; Legacy
