@@ -50,3 +50,11 @@
       (warning   "#f70047")
       (warning2  "#ff0030")
       (unspec   (when (>= emacs-major-version 29) 'unspecified)))
+      (custom-theme-set-faces
+    'Blossom Theme
+   `(default ((,class (:background ,bg1 :foreground ,fg1))))
+   `(font-lock-builtin-face ((,class (:foreground ,builtin))))
+   `(font-lock-comment-face ((,class (:foreground ,comment))))
+	 `(font-lock-negation-char-face ((,class (:foreground ,const))))
+	 `(font-lock-reference-face ((,class (:foreground ,const))))
+	 `(font-lock-constant-face ((,class (:foreground ,const))))
