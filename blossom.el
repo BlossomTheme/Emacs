@@ -26,3 +26,15 @@
 ;;; Blossom Theme theme created by BlossomTheme in 2024
 
 ;;; Code:
+
+(deftheme Blossom Theme)
+(let ((class '((class color) (min-colors 89)))
+      (fg1 "#ff058d")
+      (fg2 "#eb0582")
+      (fg3 "#d60476")
+      (fg4 "#c2046b")
+      (fg6 "#ff41a8")
+      (bg1 "#10111b")
+      (bg2 "#23242d")
+      (bg3 "#36373f")
+      (bg4 "#494a52")
