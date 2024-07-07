@@ -5,6 +5,22 @@
 ;; Author: BlossomTheme
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24.1"))
+;; Created with ThemeCreator, https://github.com/mswift42/themecreator.
+
+;; This program is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+;; This file is not part of Emacs.
 
 ;;; Commentary:
 ;;; Blossom Theme theme created by BlossomTheme in 2024
@@ -34,15 +50,15 @@
       (warning   "#f70047")
       (warning2  "#ff0030")
       (unspec   (when (>= emacs-major-version 29) 'unspecified)))
-      (custom-theme-set-faces
-    'Blossom Theme
+  (custom-theme-set-faces
+   'Blossom Theme
    `(default ((,class (:background ,bg1 :foreground ,fg1))))
    `(font-lock-builtin-face ((,class (:foreground ,builtin))))
    `(font-lock-comment-face ((,class (:foreground ,comment))))
 	 `(font-lock-negation-char-face ((,class (:foreground ,const))))
 	 `(font-lock-reference-face ((,class (:foreground ,const))))
 	 `(font-lock-constant-face ((,class (:foreground ,const))))
-     `(font-lock-doc-face ((,class (:foreground ,comment))))
+   `(font-lock-doc-face ((,class (:foreground ,comment))))
    `(font-lock-function-name-face ((,class (:foreground ,func ))))
    `(font-lock-keyword-face ((,class (:bold ,class :foreground ,keyword))))
    `(font-lock-string-face ((,class (:foreground ,str))))
@@ -53,7 +69,7 @@
    ;; `(region ((,class (:background ,fg1 :foreground ,bg1))))
    `(region ((,class (:background ,selection))))
    `(highlight ((,class (:foreground ,fg3 :background ,bg3))))
-   `(hl-line ((,class (:background  ,bg2))))
+	 `(hl-line ((,class (:background  ,bg2))))
 	 `(fringe ((,class (:background ,bg2 :foreground ,fg4))))
 	 `(cursor ((,class (:background ,fg4))))
    `(isearch ((,class (:bold t :foreground ,warning :background ,bg3))))
@@ -65,7 +81,7 @@
 	 `(vertical-border ((,class (:foreground ,fg3))))
    `(minibuffer-prompt ((,class (:bold t :foreground ,keyword))))
    `(default-italic ((,class (:italic t))))
-   `(link ((,class (:foreground ,const :underline t))))
+	 `(link ((,class (:foreground ,const :underline t))))
 	 `(org-code ((,class (:foreground ,fg2))))
 	 `(org-hide ((,class (:foreground ,fg4))))
    `(org-level-1 ((,class (:bold t :foreground ,fg2 :height 1.1))))
@@ -91,7 +107,7 @@
    `(org-scheduled-today ((,class (:foreground ,func :weight bold :height 1.2))))
 	 `(org-ellipsis ((,class (:foreground ,builtin))))
 	 `(org-verbatim ((,class (:foreground ,fg4))))
-     `(org-document-info-keyword ((,class (:foreground ,func))))
+   `(org-document-info-keyword ((,class (:foreground ,func))))
 	 `(font-latex-bold-face ((,class (:foreground ,type))))
 	 `(font-latex-italic-face ((,class (:foreground ,var :italic t))))
 	 `(font-latex-string-face ((,class (:foreground ,str))))
@@ -100,7 +116,7 @@
 	 `(ido-only-match ((,class (:foreground ,warning))))
 	 `(org-sexp-date ((,class (:foreground ,fg4))))
 	 `(ido-first-match ((,class (:foreground ,keyword :bold t))))
-    `(ivy-current-match ((,class (:foreground ,fg3 :inherit highlight :underline t))))
+   `(ivy-current-match ((,class (:foreground ,fg3 :inherit highlight :underline t))))
 	 `(gnus-header-content ((,class (:foreground ,keyword))))
 	 `(gnus-header-from ((,class (:foreground ,var))))
 	 `(gnus-header-name ((,class (:foreground ,type))))
@@ -114,7 +130,7 @@
 	 `(js2-jsdoc-html-tag-delimiter ((,class (:foreground ,str))))
 	 `(js2-jsdoc-html-tag-name ((,class (:foreground ,var))))
 	 `(js2-external-variable ((,class (:foreground ,type  ))))
-    `(js2-function-param ((,class (:foreground ,const))))
+   `(js2-function-param ((,class (:foreground ,const))))
    `(js2-jsdoc-value ((,class (:foreground ,str))))
    `(js2-private-member ((,class (:foreground ,fg3))))
    `(js3-warning-face ((,class (:underline ,keyword))))
@@ -123,7 +139,7 @@
    `(js3-function-param-face ((,class (:foreground ,fg2))))
    `(js3-jsdoc-tag-face ((,class (:foreground ,keyword))))
    `(js3-instance-member-face ((,class (:foreground ,const))))
-    `(warning ((,class (:foreground ,warning))))
+	 `(warning ((,class (:foreground ,warning))))
 	 `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
 	 `(info-quoted-name ((,class (:foreground ,builtin))))
 	 `(info-string ((,class (:foreground ,str))))
@@ -243,7 +259,8 @@
       'Blossom Theme
       `(line-number ((t (:inherit fringe))))
       `(line-number-current-line ((t (:inherit fringe :foreground ,fg6 :weight bold))))))
-    ;; emacs >= 27.1
+
+  ;; emacs >= 27.1
   (when (>= emacs-major-version 27)
     (custom-theme-set-faces
      'Blossom Theme
@@ -257,7 +274,7 @@
      'Blossom Theme
      `(line-number ((t (:inherit fringe))))
      `(line-number-current-line ((t (:inherit fringe :foreground ,fg6 :weight bold))))))
-     ;; emacs >= 27.1
+;; emacs >= 27.1
 (when (>= emacs-major-version 27)
   (custom-theme-set-faces
    'Blossom Theme
@@ -274,7 +291,8 @@
     (custom-theme-set-faces
     'Blossom Theme
     `(font-lock-regexp-face ((,class (:inherit font-lock-string-face :underline t)))))))
-    ;;;###autoload
+
+;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
