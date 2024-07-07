@@ -274,3 +274,15 @@
     (custom-theme-set-faces
     'Blossom Theme
     `(font-lock-regexp-face ((,class (:inherit font-lock-string-face :underline t)))))))
+    ;;;###autoload
+(when load-file-name
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
+(provide-theme 'Blossom Theme)
+
+;; Local Variables:
+;; no-byte-compile: t
+;; End:
+
+;;; Blossom Theme-theme.el ends here
