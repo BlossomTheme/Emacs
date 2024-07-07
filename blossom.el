@@ -243,3 +243,17 @@
       'Blossom Theme
       `(line-number ((t (:inherit fringe))))
       `(line-number-current-line ((t (:inherit fringe :foreground ,fg6 :weight bold))))))
+    ;; emacs >= 27.1
+  (when (>= emacs-major-version 27)
+    (custom-theme-set-faces
+     'Blossom Theme
+     `(tab-line              ((,class (:background ,bg2 :foreground ,fg4))))
+     `(tab-line-tab          ((,class (:inherit tab-line))))
+     `(tab-line-tab-inactive ((,class (:background ,bg2 :foreground ,fg4))))
+     `(tab-line-tab-current  ((,class (:background ,bg1 :foreground ,fg1))))
+     `(tab-line-highlight    ((,class (:background ,bg1 :foreground ,fg2))))))
+ (when (>= emacs-major-version 28)
+    (custom-theme-set-faces
+     'Blossom Theme
+     `(line-number ((t (:inherit fringe))))
+     `(line-number-current-line ((t (:inherit fringe :foreground ,fg6 :weight bold))))))
