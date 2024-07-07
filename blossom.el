@@ -1,11 +1,11 @@
-;;; Blossom Theme-theme.el --- Theme
+;;; Blossom-theme.el --- Theme
 
 ;; Copyright (C) 2024 , BlossomTheme
 
 ;; Author: BlossomTheme
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24.1"))
-;; Created with ThemeCreator, https://github.com/mswift42/themecreator.
+;; Created with Creator, https://github.com/mswift42/themecreator.
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -23,11 +23,11 @@
 ;; This file is not part of Emacs.
 
 ;;; Commentary:
-;;; Blossom Theme theme created by BlossomTheme in 2024
+;;; Blossom theme created by BlossomTheme in 2024
 
 ;;; Code:
 
-(deftheme Blossom Theme)
+(deftheme Blossom)
 (let ((class '((class color) (min-colors 89)))
       (fg1 "#ff058d")
       (fg2 "#eb0582")
@@ -51,7 +51,7 @@
       (warning2  "#ff0030")
       (unspec   (when (>= emacs-major-version 29) 'unspecified)))
   (custom-theme-set-faces
-   'Blossom Theme
+   'Blossom
    `(default ((,class (:background ,bg1 :foreground ,fg1))))
    `(font-lock-builtin-face ((,class (:foreground ,builtin))))
    `(font-lock-comment-face ((,class (:foreground ,comment))))
@@ -247,7 +247,7 @@
    ;; Legacy
    (if (< emacs-major-version 22)
        (custom-theme-set-faces
-        'Blossom Theme
+        'Blossom
         `(show-paren-match-face ((,class (:background ,warning))))) ;; obsoleted in 22.1, removed 2016
      (custom-theme-set-faces
       'Blossom Theme
@@ -256,14 +256,14 @@
    ;; emacs >= 26.1
    (when (>= emacs-major-version 26)
      (custom-theme-set-faces
-      'Blossom Theme
+      'Blossom
       `(line-number ((t (:inherit fringe))))
       `(line-number-current-line ((t (:inherit fringe :foreground ,fg6 :weight bold))))))
 
   ;; emacs >= 27.1
   (when (>= emacs-major-version 27)
     (custom-theme-set-faces
-     'Blossom Theme
+     'Blossom
      `(tab-line              ((,class (:background ,bg2 :foreground ,fg4))))
      `(tab-line-tab          ((,class (:inherit tab-line))))
      `(tab-line-tab-inactive ((,class (:background ,bg2 :foreground ,fg4))))
@@ -271,13 +271,13 @@
      `(tab-line-highlight    ((,class (:background ,bg1 :foreground ,fg2))))))
  (when (>= emacs-major-version 28)
     (custom-theme-set-faces
-     'Blossom Theme
+     'Blossom
      `(line-number ((t (:inherit fringe))))
      `(line-number-current-line ((t (:inherit fringe :foreground ,fg6 :weight bold))))))
 ;; emacs >= 27.1
 (when (>= emacs-major-version 27)
   (custom-theme-set-faces
-   'Blossom Theme
+   'Blossom
    `(tab-line              ((,class (:background ,bg2 :foreground ,fg4))))
    `(tab-line-tab          ((,class (:inherit tab-line))))
    `(tab-line-tab-inactive ((,class (:background ,bg2 :foreground ,fg4))))
@@ -285,11 +285,11 @@
    `(tab-line-highlight    ((,class (:background ,bg1 :foreground ,fg2))))))
  (when (>= emacs-major-version 28)
     (custom-theme-set-faces
-     'Blossom Theme
+     'Blossom
      `(tab-line-tab-modified ((,class (:foreground ,warning2 :weight bold))))))
   (when (boundp 'font-lock-regexp-face)
     (custom-theme-set-faces
-    'Blossom Theme
+    'Blossom
     `(font-lock-regexp-face ((,class (:inherit font-lock-string-face :underline t)))))))
 
 ;;;###autoload
@@ -297,10 +297,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'Blossom Theme)
+(provide-theme 'Blossom)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; Blossom Theme-theme.el ends here
+;;; Blossom-theme.el ends here
