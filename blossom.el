@@ -5,7 +5,6 @@
 ;; Author: BlossomTheme
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24.1"))
-;; Created with Creator, https://github.com/mswift42/themecreator.
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
